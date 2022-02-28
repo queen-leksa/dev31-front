@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Underdog";
+    src: url(underdog/Underdog-Regular.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-Regular.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-Medium.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-SemiBold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-Bold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-ExtraBold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Ruda";
+    src: url(ruda/Ruda-Black.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Fira Code";
+    src: url(fira-code/FiraCode-Light.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url(fira-code/FiraCode-Regular.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url(fira-code/FiraCode-Medium.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url(fira-code/FiraCode-SemiBold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Fira Code";
+    src: url(fira-code/FiraCode-Bold.ttf) format("TrueType");
+    font-style: normal;
+    font-weight: 700;
+}
