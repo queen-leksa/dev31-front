@@ -4,8 +4,8 @@
             <li><router-link to="/schema">Создать коллекцию</router-link></li>
             <li>Коллекции
                 <ul class="submenu">
-                    <li v-for="link in links" :key="link">
-                        <router-link :to="'/col/'+link">{{link}}</router-link>
+                    <li v-for="(link, key) in links" :key="key">
+                        <router-link :to="'/col/'+key">{{key}}</router-link>
                     </li>
                 </ul>
             </li>

@@ -1,7 +1,7 @@
 <template>
     <main-header></main-header>
-    <nav-bar :links="links" :height="sizes.c"></nav-bar>
-    <router-view/>
+    <nav-bar :links="collections" :height="sizes.c"></nav-bar>
+    <router-view :collections="collections"/>
     <main-footer @setHeight="setSizes"></main-footer>
 </template>
 
@@ -18,7 +18,10 @@
         data() {
             return {
                 links: ["Animals", "Users", "Flowers"],
-                sizes: {}
+                sizes: {},
+                collections: {
+
+                }
             }
         },
         methods: {
@@ -26,7 +29,19 @@
                 this.sizes.h = sizes.h;
                 this.sizes.c = sizes.c;
                 this.sizes.f = sizes.f;
+            },
+            async getCollections() {
+                const resp = await fetch("http://localhost:3001/api/v1/collections/test/show");
+                const info = await resp.json();
+                if (info.msg === "ok") {
+                    for (const val of info.data) {
+                        this.collections[val.name] = val.fields;
+                    }
+                }
             }
+        },
+        mounted() {
+            this.getCollections();
         }
     }
 </script>

@@ -1,12 +1,16 @@
 <template>
     <main>
         <h1>{{ $route.params.name }}</h1>
+        <div class="container" v-for="data in collections[$route.params.name]" :key="data">
+            {{ data }}
+        </div>
     </main>
 </template>
 
 <script>
     export default {
-        name: "main-view"
+        name: "main-view",
+        props: ["collections"]
     }
 </script>
 
