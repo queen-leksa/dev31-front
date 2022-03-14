@@ -1,7 +1,7 @@
 <template>
     <main-header></main-header>
     <nav-bar :links="collections" :height="sizes.c"></nav-bar>
-    <router-view :collections="collections"/>
+    <router-view :collections="collections" @upd="getCollections"/>
     <main-footer @setHeight="setSizes"></main-footer>
 </template>
 
