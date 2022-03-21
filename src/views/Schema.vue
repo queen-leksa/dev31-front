@@ -50,7 +50,7 @@ export default {
                 body[el.name] = el.type
             });
             console.log(body);
-            let resp = await fetch("http://localhost:3001/api/v1/table/create/test/" + this.table.name, {
+            let resp = await fetch("http://dev31-server.herokuapp.com/api/v1/table/create/test/" + this.table.name, {
                 method: "post",
                 headers: {
                     "Accept": "application/json",

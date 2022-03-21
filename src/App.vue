@@ -31,7 +31,7 @@
                 this.sizes.f = sizes.f;
             },
             async getCollections() {
-                const resp = await fetch("http://localhost:3001/api/v1/collections/test/show");
+                const resp = await fetch("http://dev31-server.herokuapp.com/api/v1/collections/test/show");
                 const info = await resp.json();
                 if (info.msg === "ok") {
                     for (const val of info.data) {
